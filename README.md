@@ -6,7 +6,7 @@
 <p align="center">Esse projeto...(This project...)</p>
   <p align="left">
     <li> Sobre (About)</li>
-    <li>To-do-List</li>
+    <li>Efeitos CSS e outros (CSS effects and others)</li>
     <li>Tecnoligias (Tecnoligies)</li>
     <li>Pré-Requisitos (Features)</li>
     <li>Autor (Author)</li>
@@ -22,7 +22,7 @@
   <img src="./github/ldpage.gif" alt=pagina title=pagina/>
 </h1>
 
-<h1>To-do-List</h1>
+<h1>Efeitos CSS e outros (CSS effects and others)</h1>
 <input type = "checkbox" checked> Efeitos na barra de navegaçao superior (Top navigation bar effects)<br>
 <input type = "checkbox" checked> efeitos de background na seção Home (Background effects on Home Section)<br>
 <input type = "checkbox" checked> Seção galeria com efeitos nas fotos (Gallery section with effects on photos)<br>
