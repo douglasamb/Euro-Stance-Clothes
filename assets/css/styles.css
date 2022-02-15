@@ -1,0 +1,382 @@
+/* variáveis para facilitar a manipulação - variables to help the manipulation */
+
+:root {
+    --primary-color: #010001;
+    --white-color: #FFFFFF;
+    --border-color: #3f3f3f;
+    --gap: 3rem;
+}
+
+/* fazendo um reset do css - doing css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* propriedades gerais dos elementos - elements general properties */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quantico', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5.2rem;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* classes estruturais - structure class*/
+
+.main-bg {
+    background-image: url('../img/main-bg.svg');
+    background-size: auto;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0;
+}
+
+.section {
+    min-height: 100vh;
+    padding: var(--gap);
+    margin: 0;
+}
+
+.header-spacing {
+    height: 68px;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%
+}
+
+/* Header da pagina com o menu - webpage header with menu */
+
+.logo {
+    display: flex;
+    position: sticky;
+    width: 6.0rem;
+    padding: 0.20rem;
+}
+
+.menu {
+    background: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.2rem solid #ADB5BD;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 3rem;
+}
+
+.menu h1 a {
+    color: inherit;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-family: 'Quantico', sans-serif;
+    color: var(--primary-color);
+    position: relative;
+}
+
+/* efeito do menu - menu effect */
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: #6C757D;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover:after {
+    width: 50%;
+    left: 25%;
+}
+
+/* secao home - section home */
+
+.home-bg {
+    background: linear-gradient(to left, rgba(17, 17, 17, 0.7), rgba(20, 20, 20, 1)), url('../img/coloredM3.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.home-content {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.home-content h1 {
+    text-decoration: underline;
+    line-height: 3;
+}
+
+.home-text-content {
+    display: flex;
+    top: -40rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.home-text-content h2 {
+    font-size: 6rem;
+}
+
+.home-text-content h3 {
+    line-height: 5rem;
+}
+
+.home-text-content p {
+    font-size: 1.7rem;
+    line-height: 4rem;
+}
+
+.home-text-content strong {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* secao moletons - moletons *en=hoodies* section */
+
+.moletons {
+    display: flex;
+    padding-top: 6.5rem;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.moletons-content {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    max-width: 80rem;
+}
+
+.moletons-list li {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 2.8rem;
+    line-height: 8rem;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.moletons-img {
+    display: flex;
+    justify-content: center;
+    padding: var(--gap);
+}
+
+.moletons-img-content {
+    display: flex;
+    position: sticky;
+    width: 55rem;
+    padding: 0.20rem;
+}
+
+/* secao galeria - gallery section */
+
+.grid-one {
+    padding-top: 7rem;
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.grid-main-heading {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+.grid-description {
+    display: flex;
+    padding-bottom: 5rem;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: initial;
+}
+
+.galeria-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.galeria-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.galeria-img img:hover{
+    transform: translate(-3%, 3%) scale(1.3) rotate(5deg);
+}
+
+/* secao contato - contact section */
+
+.contato-content {
+    padding-top: 10rem;
+}
+
+.contato-form {
+    grid-column: span 2;
+}
+
+.contato-form .form-grid {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap)
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.formulario-grup {
+    flex: 1 1 320px;
+}
+
+.formulario-grup label {
+    display: block;
+    font-size: 1.8rem;
+}
+
+.formulario-grup input,
+.formulario-grup textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.formulario-grup button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.formulario-grup button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.formulario-grup::placeholder {
+    color: #778899;
+}
+
+/* rodape - Footer */
+
+.footer {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer a {
+    color: #444;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .home-content, .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .galeria-img img {
+        width: 100%;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
+
+}
