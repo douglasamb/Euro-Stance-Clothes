@@ -24,7 +24,7 @@
 
 <h1>Efeitos CSS e outros (CSS effects and others)</h1>
   <input type = "checkbox" checked> Efeitos na barra de navegaçao superior (Top navigation bar effects) - ok<br>
-  <input type = "checkbox" checked> efeitos de background na seção Home (Background effects on Home Section) - ok<br>
+  <input type = "checkbox" checked> Efeitos de background na seção Home (Background effects on Home Section) - ok<br>
   <input type = "checkbox" checked> Seção galeria com efeitos nas fotos (Gallery section with effects on photos) - ok<br>
   <input type = "checkbox" checked> Formulário de contato com efeito no botão (Contact form with effect on button Submit) - ok<br>
   <input type = "checkbox" checked> Responsividade na pagina (mobile responsiveness on webpage) - ok<br><br><br>
