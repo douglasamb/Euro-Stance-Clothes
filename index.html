@@ -12,13 +12,15 @@
 </head>
 <body class="main-bg">
 <!-- header da pagina e menu - webpage header and menu -->
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <section class="main-content menu-content">   
                 <a href="#">
                     <img class="logo" src="assets/img/LogoEsc.png" alt="Logo ESC">
                 </a>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#home-in">Home</a></li>
                     <li><a href="#moletons-in">Moletons</a></li>
                     <li><a href="#galeria-in">Galeria</a></li>
@@ -115,7 +117,8 @@
     </section>
 <!-- footer  -->
     <footer class="white-bg footer">
-        <p><a href="#">Desenvolvido por: Douglas Borges</a></p>
+        <p><a href="https://github.com/douglasamb" target="_blank">Desenvolvido por: Douglas Borges</a></p>
     </footer>
+    <a class="back-to-top" href="#">➤</a>
 </body>
 </html>
