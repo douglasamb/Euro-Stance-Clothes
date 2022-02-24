@@ -51,6 +51,7 @@
   <h3>Douglas Antonio Muniz Borges</h3><br>
   <p>Visite minhas redes:</p>
   <a href="https://github.com/douglasamb">Github
+   <p><a href="https://www.linkedin.com/in/douglas-borges-100661232" target="_blank">Linkedin</p>
 
 
 
