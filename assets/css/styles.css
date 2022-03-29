@@ -54,7 +54,7 @@ a {
     text-decoration: none;
 }
 
-/* classes estruturais - structure class*/
+/* classes estruturais - structure classes*/
 
 .main-bg {
     background-image: url('../img/main-bg.svg');
@@ -221,7 +221,7 @@ body .full-width {
     font-style: italic;
 }
 
-/* secao moletons - moletons *en=hoodies* section */
+/* secao moletons - moletons [en=hoodies] section */
 
 .moletons {
     display: flex;
@@ -367,7 +367,7 @@ body .full-width {
     color: #778899;
 }
 
-/* rodape - Footer */
+/* rodape - footer */
 
 .footer {
     text-align: center;
